@@ -9,12 +9,8 @@ class WeatherInfo extends React.Component {
     const astronomyData = data.astronomy[0];
     let hourlyData;
     const timeOfDay = this.props.dataToShow.timeOfDay;
-    console.log(data);
-    if (timeOfDay === "AM") {
-      hourlyData = data.hourly.slice(0, 4);
-    } else if (timeOfDay === "PM"){
-      hourlyData = data.hourly.slice(4, 8);
-    }
+    const startingIndex = (timeOfDay - 1) * 4;
+    hourlyData = data.hourly.slice(startingIndex, startingIndex + 4);
     
     return(
       <div className="col-12">

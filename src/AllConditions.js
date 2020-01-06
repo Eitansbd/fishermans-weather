@@ -14,7 +14,7 @@ class AllConditions extends React.Component {
       data: data,
       dataToShow: {
         date: date,
-        timeOfDay: "AM",
+        timeOfDay: 1,
         weatherData: currentData, 
       },
       
@@ -31,27 +31,31 @@ class AllConditions extends React.Component {
       return (weatherData.date === date);
     });
     
-    this.setState({
+    this.setState(state => ({
       dataToShow: {
         date: date,
-        timeOfDay: "AM",
+        timeOfDay: state.dataToShow.timeOfDay,
         weatherData: weatherData,
       }
-    });
+    }));
   }
   
   handleTimeChange(e) {
     let dateIndex = this.state.data.findIndex(data => data.date === this.state.dataToShow.date);
+    let timeOfDay = this.state.dataToShow.timeOfDay;
     
-    let timeOfDay;
-    if (this.state.dataToShow.timeOfDay === "AM") {
-      timeOfDay = "PM";
-      if (e.target.innerText === "<") {
+    if (e.target.innerText === "<") {
+      if (timeOfDay !== 1) {
+        timeOfDay--;
+      } else if (timeOfDay === 1) {
+        timeOfDay = 6;
         dateIndex--;
       }
-    } else if (this.state.dataToShow.timeOfDay === "PM") {
-      timeOfDay = "AM";
-      if (e.target.innerText === ">") {
+    } else if (e.target.innerText === ">") {
+      if (timeOfDay !== 6) {
+        timeOfDay++;
+      } else if (timeOfDay === 6) {
+        timeOfDay = 1;
         dateIndex++;
       }
     }
