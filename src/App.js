@@ -19,10 +19,15 @@ class App extends React.Component {
   constructor(props){
     super(props);
     
+    this.state = {
+      mapMarker: null,
+    };
+    
     this.getData = this.APICall.bind(this);
   }
   
   handleMapClick(clickEvent){
+    console.log("here")
     const latLng = clickEvent.latLng;
     const lat = latLng.lat();
     const lng = latLng.lng();
@@ -68,9 +73,11 @@ class App extends React.Component {
         <div className="row map-container" >
           <MapContainer mapMarker={this.state.mapMarker} onClick={this.handleMapClick.bind(this)} />
         </div>
-        <div>
-          <AllConditions weatherData={this.state.weatherData} />
-        </div>
+        {this.state.data &&
+          <div>
+            <AllConditions weatherData={this.state.data}
+                           key={this.state.mapMarker.lat + this.state.mapMarker.lng}/>
+          </div>}
       </div>
     );
   }
