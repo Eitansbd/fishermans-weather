@@ -1,5 +1,5 @@
 {
-  "name": "marine-data",
+  "name": "fishermans-weather",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
