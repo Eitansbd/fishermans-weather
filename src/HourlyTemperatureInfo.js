@@ -24,7 +24,9 @@ class HourlyTemperatureInfo extends React.Component{
       <li className="media hourly-weather">
         <img src={tempData.weatherIconUrl[0].value} className="mr-3 align-self-center" alt="weather-icon" />
         <div class="media-body">
-          <h5 className="mt-0 mb-1">{this.timeFormat(tempData.time)}</h5>
+          <h5 className="mt-0 mb-1">
+            {this.timeFormat(tempData.time)} - <small>{tempData.weatherDesc[0].value}</small>
+          </h5>
           <p className="hourly-weather-description">{tempData.tempF} °F, winds {tempData.winddir16Point} at {tempData.windspeedMiles} MPH with gusts up to {tempData.
           WindGustMiles} MPH</p>
           <p className="hourly-weather-description">Waves around {tempData.swellHeight_ft} feet, visiblity {tempData.visibilityMiles} Miles</p>

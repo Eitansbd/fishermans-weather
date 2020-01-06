@@ -1,10 +1,11 @@
 .map-container > div:first-of-type {
-    width: 400px !important;
+    width: 500px !important;
     height: 300px !important;
 }
 .map-container {
-    width: 400px;
+    width: 500px;
     height: 300px;
+    margin: auto;
 }
 
 .day-button-container {
@@ -22,4 +23,10 @@
 
 .hourly-weather-description {
     margin-bottom: 1px;
+}
+
+.temperature-container {
+    border: 2px solid #737275;
+    border-radius: 10px;
+    background-color: #bbd0e5;
 }

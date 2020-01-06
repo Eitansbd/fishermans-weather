@@ -11,15 +11,15 @@ class WeatherInfo extends React.Component {
     const timeOfDay = this.props.dataToShow.timeOfDay;
     console.log(data);
     if (timeOfDay === "AM") {
-      hourlyData = data.hourly.slice(0, data.hourly.length / 2);
+      hourlyData = data.hourly.slice(0, 4);
     } else if (timeOfDay === "PM"){
-      hourlyData = data.hourly.slice(data.hourly.length / 2);
+      hourlyData = data.hourly.slice(4, 8);
     }
     
     return(
       <div className="col-12">
         <div className="row">
-          <div className="col">
+          <div className="col-md-7 temperature-container">
             <TemperatureInfo hourlyData={hourlyData} 
                              timeOfDay={timeOfDay}
                              handleTimeChange={this.props.handleTimeChange}/>
@@ -31,7 +31,7 @@ class WeatherInfo extends React.Component {
               </div>
             </div>
             <div className="row">
-              <div className="col-md-6">
+              <div className="col">
                 <TideChart tideData={data.tides[0].tide_data} />
               </div>
             </div>

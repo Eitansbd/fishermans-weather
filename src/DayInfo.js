@@ -5,8 +5,8 @@ class DayInfo extends React.Component {
     const astronomyData = this.props.astronomyData;
     return(
       <div>
-        <p>sunrise: {astronomyData.sunrise}, sunset: {astronomyData.sunset}</p>  
-        <p>water temp: {this.props.waterTemp}</p>
+        <p>
+        sunrise: {astronomyData.sunrise}, sunset: {astronomyData.sunset}, water temp: {this.props.waterTemp}</p>
       </div>
     );
   }

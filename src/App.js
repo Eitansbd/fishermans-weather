@@ -68,7 +68,7 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="row">
-          <h1>Fishing Data</h1>
+          <h1>Fisherman's Weather</h1>
         </div>
         <div className="row map-container" >
           <MapContainer mapMarker={this.state.mapMarker} onClick={this.handleMapClick.bind(this)} />

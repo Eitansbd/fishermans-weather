@@ -10,18 +10,18 @@ class TemperatureInfo extends React.Component {
     
     return(
       <div>
-      <div className="btn-group">
-        <button className="btn btn-primary" onClick={(e) => this.props.handleTimeChange(e)}>&#x3C;</button>
-        <button className="btn btn-primary" onClick={(e) => this.props.handleTimeChange(e)}>&#x3E;</button>
-      </div>
-      <ul className="list-unstyled">
-        {hourlyData.map(hourData => {
-          return (
-            <HourlyTemperatureInfo 
-              key={hourData.time}tempData={hourData} />
-          );
-        })}
-      </ul>
+        <div className="btn-group">
+          <button className="btn btn-primary" onClick={(e) => this.props.handleTimeChange(e)}>&#x3C;</button>
+          <button className="btn btn-primary" onClick={(e) => this.props.handleTimeChange(e)}>&#x3E;</button>
+        </div>
+        <ul className="list-unstyled">
+          {hourlyData.map(hourData => {
+            return (
+              <HourlyTemperatureInfo 
+                key={hourData.time}tempData={hourData} />
+            );
+          })}
+        </ul>
       </div>
     );
   }
