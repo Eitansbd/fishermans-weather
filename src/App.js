@@ -42,7 +42,7 @@ class App extends React.Component {
   }
   
   APICall(lat, lng) {
-    fetch(`http://api.worldweatheronline.com/premium/v1/marine.ashx?q=${lat},${lng}&key=95a5d8be77864b6e957144653193012&format=json&tp=1&tide=yes`)
+    fetch(`https://api.worldweatheronline.com/premium/v1/marine.ashx?q=${lat},${lng}&key=95a5d8be77864b6e957144653193012&format=json&tp=1&tide=yes`)
       .then(res => res.json())
       .then(
         (result) => {
