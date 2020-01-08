@@ -22,7 +22,7 @@ class HourlyTemperatureInfo extends React.Component{
     const tempData = this.props.tempData;
     return(
       <li className="media hourly-weather">
-        <img src={tempData.weatherIconUrl[0].value} className="mr-3 align-self-center" alt="weather-icon" />
+        <img src={tempData.weatherIconUrl[0].value} className="mr-3 align-self-center rounded" alt="weather-icon" />
         <div class="media-body">
           <h5 className="mt-0 mb-1">
             {this.timeFormat(tempData.time)} - <small>{tempData.weatherDesc[0].value}</small>

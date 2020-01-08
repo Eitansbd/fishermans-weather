@@ -1,5 +1,5 @@
 body {
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .map-container > div:first-of-type {
@@ -38,14 +38,11 @@ body {
     border: 2px solid #737275;
     border-radius: 10px;
     background-color: #bbd0e5;
+    margin-top: 16px;
 }
 
 .border-fill {
     background-color: #C5C5C5;
-}
-
-.tide-data-container {
-    margin-top: 20px;
 }
 
 .all-conditions-container {
