@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fishermans-weather/precache-manifest.bb83015a58340982d497a40f96884229.js"
+  "/fishermans-weather/precache-manifest.e3185ab4892eabb3d709693e6a187c8a.js"
 );
 
 self.addEventListener('message', (event) => {

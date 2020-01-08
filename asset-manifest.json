@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/fishermans-weather/static/css/main.53ba6146.chunk.css",
-    "main.js": "/fishermans-weather/static/js/main.45afa9fe.chunk.js",
-    "main.js.map": "/fishermans-weather/static/js/main.45afa9fe.chunk.js.map",
+    "main.css": "/fishermans-weather/static/css/main.e08074bb.chunk.css",
+    "main.js": "/fishermans-weather/static/js/main.ab822815.chunk.js",
+    "main.js.map": "/fishermans-weather/static/js/main.ab822815.chunk.js.map",
     "runtime-main.js": "/fishermans-weather/static/js/runtime-main.431162ca.js",
     "runtime-main.js.map": "/fishermans-weather/static/js/runtime-main.431162ca.js.map",
     "static/css/2.64a99b10.chunk.css": "/fishermans-weather/static/css/2.64a99b10.chunk.css",
     "static/js/2.2abd1da5.chunk.js": "/fishermans-weather/static/js/2.2abd1da5.chunk.js",
     "static/js/2.2abd1da5.chunk.js.map": "/fishermans-weather/static/js/2.2abd1da5.chunk.js.map",
     "index.html": "/fishermans-weather/index.html",
-    "precache-manifest.bb83015a58340982d497a40f96884229.js": "/fishermans-weather/precache-manifest.bb83015a58340982d497a40f96884229.js",
+    "precache-manifest.e3185ab4892eabb3d709693e6a187c8a.js": "/fishermans-weather/precache-manifest.e3185ab4892eabb3d709693e6a187c8a.js",
     "service-worker.js": "/fishermans-weather/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/fishermans-weather/static/css/2.64a99b10.chunk.css.map",
-    "static/css/main.53ba6146.chunk.css.map": "/fishermans-weather/static/css/main.53ba6146.chunk.css.map",
+    "static/css/main.e08074bb.chunk.css.map": "/fishermans-weather/static/css/main.e08074bb.chunk.css.map",
     "static/js/2.2abd1da5.chunk.js.LICENSE": "/fishermans-weather/static/js/2.2abd1da5.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.431162ca.js",
     "static/css/2.64a99b10.chunk.css",
     "static/js/2.2abd1da5.chunk.js",
-    "static/css/main.53ba6146.chunk.css",
-    "static/js/main.45afa9fe.chunk.js"
+    "static/css/main.e08074bb.chunk.css",
+    "static/js/main.ab822815.chunk.js"
   ]
 }
