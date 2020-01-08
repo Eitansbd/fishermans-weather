@@ -1,7 +1,7 @@
 {
-  "name": "fishermans-weather",
+  "name": "fishing-forecast",
   "version": "0.1.0",
-  "homepage": "http://eitansbd.github.io/fishermans-weather",
+  "homepage": "http://eitansbd.github.io/fishing-forecast",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
