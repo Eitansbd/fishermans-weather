@@ -81,7 +81,7 @@ class App extends React.Component {
         <div className="row">
           <div className="col-12">
             <h2 className="text-center">
-              Angler Weather
+              Angler's Weather
             </h2>
           </div>
         </div>
@@ -91,13 +91,22 @@ class App extends React.Component {
                             onClick={this.handleMapClick.bind(this)} />
             </div>
           }
-          {this.state.dataIsLoaded &&
+          {this.state.dataIsLoaded? (
+            <div className="location-container">
               <p class="text-muted text-center">
                 Showing results for: {this.state.address}
                 <button className="btn btn-sm btn-primary" onClick={this.revealMap.bind(this)}>
                   {this.state.showMap ? "Hide" : "Show"} map
                 </button>
               </p>
+            </div>
+          ) : (
+            <div className="location-container">
+              <p class="text-muted text-center">
+                Click a location on the map for the latest marine and weather information.
+              </p>
+            </div>
+          )
           }
           {this.state.data &&
             <div className="all-conditions-container">

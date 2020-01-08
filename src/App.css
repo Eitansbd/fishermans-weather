@@ -3,12 +3,12 @@ body {
 }
 
 .map-container > div:first-of-type {
-    width: 500px !important;
-    height: 300px !important;
+    width: 600px !important;
+    height: 400px !important;
 }
 .map-container {
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     margin: auto;
 }
 
@@ -63,4 +63,12 @@ body {
 .hours-selection {
     margin-left: 6px;
     padding-left: 8px;
+}
+
+.location-container {
+    margin-top: 10px;
+}
+
+.location-container button {
+    margin-left: 8px;
 }
