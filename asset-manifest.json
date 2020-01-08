@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/fishing-forecast/static/css/main.4354d2b0.chunk.css",
-    "main.js": "/fishing-forecast/static/js/main.7d520ea5.chunk.js",
-    "main.js.map": "/fishing-forecast/static/js/main.7d520ea5.chunk.js.map",
+    "main.js": "/fishing-forecast/static/js/main.60411d4b.chunk.js",
+    "main.js.map": "/fishing-forecast/static/js/main.60411d4b.chunk.js.map",
     "runtime-main.js": "/fishing-forecast/static/js/runtime-main.425212c3.js",
     "runtime-main.js.map": "/fishing-forecast/static/js/runtime-main.425212c3.js.map",
     "static/css/2.64a99b10.chunk.css": "/fishing-forecast/static/css/2.64a99b10.chunk.css",
     "static/js/2.98e1c4d8.chunk.js": "/fishing-forecast/static/js/2.98e1c4d8.chunk.js",
     "static/js/2.98e1c4d8.chunk.js.map": "/fishing-forecast/static/js/2.98e1c4d8.chunk.js.map",
     "index.html": "/fishing-forecast/index.html",
-    "precache-manifest.efb83adf49aefc91ef4c21bdc3895b94.js": "/fishing-forecast/precache-manifest.efb83adf49aefc91ef4c21bdc3895b94.js",
+    "precache-manifest.e5947cfdf7881c6d1b47e4e074a7f2e7.js": "/fishing-forecast/precache-manifest.e5947cfdf7881c6d1b47e4e074a7f2e7.js",
     "service-worker.js": "/fishing-forecast/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/fishing-forecast/static/css/2.64a99b10.chunk.css.map",
     "static/css/main.4354d2b0.chunk.css.map": "/fishing-forecast/static/css/main.4354d2b0.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.64a99b10.chunk.css",
     "static/js/2.98e1c4d8.chunk.js",
     "static/css/main.4354d2b0.chunk.css",
-    "static/js/main.7d520ea5.chunk.js"
+    "static/js/main.60411d4b.chunk.js"
   ]
 }
