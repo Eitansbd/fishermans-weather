@@ -81,7 +81,7 @@ class App extends React.Component {
         <div className="row">
           <div className="col-12">
             <h2 className="text-center">
-              Angler's Weather
+              The Fishing Forecast
             </h2>
           </div>
         </div>
