@@ -4,30 +4,17 @@ import SampleData from './sample_api_data.json';
 import MapContainer from './Map.js';
 import AllConditions from './AllConditions';
 
-class MarineInfo extends React.Component {
-  
-  render() {
-    return(
-      <div>
-      
-      </div>
-    );
-  }
-}
-
 class App extends React.Component {
   constructor(props){
     super(props);
     
     this.state = {
+      showMap: true,
       mapMarker: null,
     };
-    
-    this.getData = this.APICall.bind(this);
   }
   
   handleMapClick(clickEvent){
-    console.log("here")
     const latLng = clickEvent.latLng;
     const lat = latLng.lat();
     const lng = latLng.lng();
@@ -38,17 +25,38 @@ class App extends React.Component {
       }
     });
     
-    this.APICall(lat, lng);
+    this.fetchWeatherData(lat, lng);
+    this.fetchLocation(lat, lng);
   }
   
-  APICall(lat, lng) {
+  fetchLocation(lat, lng) {
+    const mapApiKey = "AIzaSyAoGvJeAlvfIulWTeZyePXSIYBG1ZUBC_0";
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${mapApiKey}`)
+      .then(res => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            address: result.results[0].formatted_address
+          });
+        },
+        (error) => {
+          this.setState({
+            LocationIsLoaded: false,
+            error
+          });
+        }
+      );
+  }
+  
+  fetchWeatherData(lat, lng) {
     fetch(`https://api.worldweatheronline.com/premium/v1/marine.ashx?q=${lat},${lng}&key=95a5d8be77864b6e957144653193012&format=json&tp=1&tide=yes`)
       .then(res => res.json())
       .then(
         (result) => {
           const weatherData = result.data.weather;
           this.setState({
-            isLoaded: true, 
+            showMap: false,
+            dataIsLoaded: true, 
             data: weatherData,
           });
         },
@@ -61,23 +69,41 @@ class App extends React.Component {
       );
   }
   
-  
+  revealMap() {
+    this.setState({
+      showMap: !this.state.showMap
+    });
+  }
   
   render() {
-    
     return (
       <div className="container">
         <div className="row">
-          <h1>Fisherman's Weather</h1>
+          <div className="col-12">
+            <h2 className="text-center">
+              Angler Weather
+            </h2>
+          </div>
         </div>
-        <div className="row map-container" >
-          <MapContainer mapMarker={this.state.mapMarker} onClick={this.handleMapClick.bind(this)} />
-        </div>
-        {this.state.data &&
-          <div>
-            <AllConditions weatherData={this.state.data}
-                           key={this.state.mapMarker.lat + this.state.mapMarker.lng}/>
-          </div>}
+          {this.state.showMap &&
+            <div className="row map-container" >
+              <MapContainer mapMarker={this.state.mapMarker} 
+                            onClick={this.handleMapClick.bind(this)} />
+            </div>
+          }
+          {this.state.dataIsLoaded &&
+              <p class="text-muted text-center">
+                Showing results for: {this.state.address}
+                <button className="btn btn-sm btn-primary" onClick={this.revealMap.bind(this)}>
+                  {this.state.showMap ? "Hide" : "Show"} map
+                </button>
+              </p>
+          }
+          {this.state.data &&
+            <div className="all-conditions-container">
+              <AllConditions weatherData={this.state.data}
+                             key={this.state.mapMarker.lat + this.state.mapMarker.lng}/>
+          </div>          }
       </div>
     );
   }

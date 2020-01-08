@@ -10,11 +10,24 @@ class TemperatureInfo extends React.Component {
     
     return(
       <div>
-        <div className="btn-group">
-          <button className="btn btn-primary" onClick={(e) => this.props.handleTimeChange(e)}>&#x3C;</button>
-          <button className="btn btn-primary" onClick={(e) => this.props.handleTimeChange(e)}>&#x3E;</button>
+        <div className="hours-per-page">
+          <div className="form-inline float-right">
+          <div className="float-right form-group">
+            <label className="control-label">Hours per page: 
+              <select value={this.props.hoursPerPage} 
+                      onChange={(e) => this.props.handleHoursPerPageChange(e)}
+                      className="form-control hours-selection">
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+              </select>
+            </label>
+          </div>
+          </div>
         </div>
-        <ul className="list-unstyled">
+        <ul className="list-unstyled hourly-data">
           {hourlyData.map(hourData => {
             return (
               <HourlyTemperatureInfo 
@@ -22,6 +35,10 @@ class TemperatureInfo extends React.Component {
             );
           })}
         </ul>
+        <div>
+            <button className="btn btn-default float-left" onClick={(e) => this.props.handleTimeChange(e)}>Previous</button>
+            <button className="btn btn-default float-right" onClick={(e) => this.props.handleTimeChange(e)}>Next</button>
+        </div>
       </div>
     );
   }

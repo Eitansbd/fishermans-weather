@@ -1,3 +1,7 @@
+body {
+    margin-top: 40px;
+}
+
 .map-container > div:first-of-type {
     width: 500px !important;
     height: 300px !important;
@@ -17,16 +21,46 @@
     width: 100%;
 }
 
+.hourly-data {
+    clear: both;
+}
+
 .hourly-weather {
     margin-bottom: 10px;
+    border-bottom: 1px solid black;
 }
 
 .hourly-weather-description {
     margin-bottom: 1px;
 }
 
-.temperature-container {
+.temperature-container, .border-fill {
     border: 2px solid #737275;
     border-radius: 10px;
     background-color: #bbd0e5;
+}
+
+.border-fill {
+    background-color: #C5C5C5;
+}
+
+.tide-data-container {
+    margin-top: 20px;
+}
+
+.all-conditions-container {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0px 40px 40px 40px;
+    background-color: #efefef;
+    margin-top: 10px;
+}
+
+.hours-per-page {
+    margin-top: 10px;
+}
+
+.hours-selection {
+    margin-left: 6px;
+    padding-left: 8px;
 }

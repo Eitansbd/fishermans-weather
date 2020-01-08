@@ -5,30 +5,24 @@ import DayInfo from './DayInfo';
 
 class WeatherInfo extends React.Component {
   render() {
-    const data = this.props.dataToShow.weatherData;
-    const astronomyData = data.astronomy[0];
-    let hourlyData;
-    const timeOfDay = this.props.dataToShow.timeOfDay;
-    const startingIndex = (timeOfDay - 1) * 4;
-    hourlyData = data.hourly.slice(startingIndex, startingIndex + 4);
-    
     return(
       <div className="col-12">
         <div className="row">
-          <div className="col-md-7 temperature-container">
-            <TemperatureInfo hourlyData={hourlyData} 
-                             timeOfDay={timeOfDay}
-                             handleTimeChange={this.props.handleTimeChange}/>
+          <div className="col-md-6 temperature-container">
+            <TemperatureInfo hourlyData={this.props.hourlyData}
+                             hoursPerPage={this.props.hoursPerPage}
+                             handleTimeChange={this.props.handleTimeChange}
+                             handleHoursPerPageChange={this.props.handleHoursPerPageChange}/>
           </div>
-          <div className="col">
-            <div className="row">
+          <div className="col offset-md-1">
+            <div className="row border-fill">
               <div className="col">
-                <DayInfo astronomyData={astronomyData} waterTemp={hourlyData[0].waterTemp_F}/>
+                <DayInfo astronomyData={this.props.astronomyData} waterTemp={this.props.hourlyData[0].waterTemp_F}/>
               </div>
             </div>
-            <div className="row">
+            <div className="row border-fill tide-data-container">
               <div className="col">
-                <TideChart tideData={data.tides[0].tide_data} />
+                <TideChart tideData={this.props.tideData} />
               </div>
             </div>
           </div>
