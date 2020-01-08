@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/fishermans-weather/static/css/main.e08074bb.chunk.css",
-    "main.js": "/fishermans-weather/static/js/main.ab822815.chunk.js",
-    "main.js.map": "/fishermans-weather/static/js/main.ab822815.chunk.js.map",
-    "runtime-main.js": "/fishermans-weather/static/js/runtime-main.431162ca.js",
-    "runtime-main.js.map": "/fishermans-weather/static/js/runtime-main.431162ca.js.map",
-    "static/css/2.64a99b10.chunk.css": "/fishermans-weather/static/css/2.64a99b10.chunk.css",
-    "static/js/2.2abd1da5.chunk.js": "/fishermans-weather/static/js/2.2abd1da5.chunk.js",
-    "static/js/2.2abd1da5.chunk.js.map": "/fishermans-weather/static/js/2.2abd1da5.chunk.js.map",
-    "index.html": "/fishermans-weather/index.html",
-    "precache-manifest.e3185ab4892eabb3d709693e6a187c8a.js": "/fishermans-weather/precache-manifest.e3185ab4892eabb3d709693e6a187c8a.js",
-    "service-worker.js": "/fishermans-weather/service-worker.js",
-    "static/css/2.64a99b10.chunk.css.map": "/fishermans-weather/static/css/2.64a99b10.chunk.css.map",
-    "static/css/main.e08074bb.chunk.css.map": "/fishermans-weather/static/css/main.e08074bb.chunk.css.map",
-    "static/js/2.2abd1da5.chunk.js.LICENSE": "/fishermans-weather/static/js/2.2abd1da5.chunk.js.LICENSE"
+    "main.css": "/fishing-forecast/static/css/main.4354d2b0.chunk.css",
+    "main.js": "/fishing-forecast/static/js/main.7d520ea5.chunk.js",
+    "main.js.map": "/fishing-forecast/static/js/main.7d520ea5.chunk.js.map",
+    "runtime-main.js": "/fishing-forecast/static/js/runtime-main.425212c3.js",
+    "runtime-main.js.map": "/fishing-forecast/static/js/runtime-main.425212c3.js.map",
+    "static/css/2.64a99b10.chunk.css": "/fishing-forecast/static/css/2.64a99b10.chunk.css",
+    "static/js/2.98e1c4d8.chunk.js": "/fishing-forecast/static/js/2.98e1c4d8.chunk.js",
+    "static/js/2.98e1c4d8.chunk.js.map": "/fishing-forecast/static/js/2.98e1c4d8.chunk.js.map",
+    "index.html": "/fishing-forecast/index.html",
+    "precache-manifest.efb83adf49aefc91ef4c21bdc3895b94.js": "/fishing-forecast/precache-manifest.efb83adf49aefc91ef4c21bdc3895b94.js",
+    "service-worker.js": "/fishing-forecast/service-worker.js",
+    "static/css/2.64a99b10.chunk.css.map": "/fishing-forecast/static/css/2.64a99b10.chunk.css.map",
+    "static/css/main.4354d2b0.chunk.css.map": "/fishing-forecast/static/css/main.4354d2b0.chunk.css.map",
+    "static/js/2.98e1c4d8.chunk.js.LICENSE": "/fishing-forecast/static/js/2.98e1c4d8.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.431162ca.js",
+    "static/js/runtime-main.425212c3.js",
     "static/css/2.64a99b10.chunk.css",
-    "static/js/2.2abd1da5.chunk.js",
-    "static/css/main.e08074bb.chunk.css",
-    "static/js/main.ab822815.chunk.js"
+    "static/js/2.98e1c4d8.chunk.js",
+    "static/css/main.4354d2b0.chunk.css",
+    "static/js/main.7d520ea5.chunk.js"
   ]
 }
