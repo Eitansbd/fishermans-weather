@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e41263fc9fa9866929eb924d6021dc24",
+    "revision": "3212736e330e7e72e72e319de64016a1",
     "url": "/fishing-forecast/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fishing-forecast/static/css/2.64a99b10.chunk.css"
   },
   {
-    "revision": "9d9e1fe80652cb04048f",
-    "url": "/fishing-forecast/static/css/main.76a719a0.chunk.css"
+    "revision": "e402b7c39a42bda46a9a",
+    "url": "/fishing-forecast/static/css/main.3d78b726.chunk.css"
   },
   {
     "revision": "6c4c560819567cea32d7",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fishing-forecast/static/js/2.98e1c4d8.chunk.js.LICENSE"
   },
   {
-    "revision": "9d9e1fe80652cb04048f",
-    "url": "/fishing-forecast/static/js/main.3f25e123.chunk.js"
+    "revision": "e402b7c39a42bda46a9a",
+    "url": "/fishing-forecast/static/js/main.c9b37a8b.chunk.js"
   },
   {
     "revision": "d944416a7fdb2bf72d6b",
