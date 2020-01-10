@@ -9,12 +9,17 @@ class AllConditions extends React.Component {
     const data = props.weatherData;
     const date = data[0].date;
     
+    const today = new Date();
+    const currentHour = today.getHours();
+    const hoursToShow = 8;
+    const timeOfDay = Math.ceil((currentHour + 1) / hoursToShow);
+    
     this.state = {
       data: data,
       dataToShow: {
-        hours: 4,
+        hours: hoursToShow,
         date: date,
-        timeOfDay: 1,
+        timeOfDay: timeOfDay,
       },
       
       tempUnit: "F",

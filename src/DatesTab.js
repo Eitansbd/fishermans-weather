@@ -2,7 +2,7 @@ import React from 'react';
 
 class DatesTab extends React.Component {
   formatDate(APIDate){
-    const date = new Date(Date.parse(APIDate));
+    const date = new Date(Date.parse(APIDate + 'T00:00:00'));
     return (date.toLocaleDateString());
   }
   render() {
