@@ -11,7 +11,7 @@ class AllConditions extends React.Component {
     
     const today = new Date();
     const currentHour = today.getHours();
-    const hoursToShow = 8;
+    const hoursToShow = 4;
     const timeOfDay = Math.ceil((currentHour + 1) / hoursToShow);
     
     this.state = {
